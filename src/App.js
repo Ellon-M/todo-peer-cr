@@ -1,11 +1,20 @@
-import logo from './logo.svg';
+import React from 'react';
+import TodoContainer from './components/todoContainer';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <TodoContainer />
+      </div>
+    );
+  }
 }
 
 export default App;
